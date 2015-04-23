@@ -7,6 +7,7 @@
 //
 
 #import "CityListViewController.h"
+#import "CitySelectTableViewCell.h"
 
 @interface CityListViewController ()
 
@@ -105,22 +106,27 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"Cell";
-    
-    NSString *key = [_keys objectAtIndex:indexPath.section];
-    
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] ;
-        cell.backgroundColor = [UIColor clearColor];
-        cell.contentView.backgroundColor = [UIColor clearColor];
-        cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    if (indexPath.section != 0) {
+        static NSString *CellIdentifier = @"Cell";
         
-        [cell.textLabel setTextColor:[UIColor blackColor]];
-        cell.textLabel.font = [UIFont systemFontOfSize:18];
+        NSString *key = [_keys objectAtIndex:indexPath.section];
+        
+        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+        if (cell == nil) {
+            cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] ;
+            cell.backgroundColor = [UIColor clearColor];
+            cell.contentView.backgroundColor = [UIColor clearColor];
+            cell.selectionStyle = UITableViewCellSelectionStyleNone;
+            
+            [cell.textLabel setTextColor:[UIColor blackColor]];
+            cell.textLabel.font = [UIFont systemFontOfSize:18];
+        }
+        cell.textLabel.text = [[_cities objectForKey:key] objectAtIndex:indexPath.row];
+        return cell;
+    }else{
+        
     }
-    cell.textLabel.text = [[_cities objectForKey:key] objectAtIndex:indexPath.row];
-    return cell;
+    
 }
 
 

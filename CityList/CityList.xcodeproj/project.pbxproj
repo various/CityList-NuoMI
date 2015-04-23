@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F5465151AE7A71300C3F34B /* CitySelectTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F5465131AE7A71300C3F34B /* CitySelectTableViewCell.m */; };
+		7F5465161AE7A71300C3F34B /* CitySelectTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F5465141AE7A71300C3F34B /* CitySelectTableViewCell.xib */; };
 		BFD067E418C8680B0093AED8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFD067E318C8680B0093AED8 /* Foundation.framework */; };
 		BFD067E618C8680B0093AED8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFD067E518C8680B0093AED8 /* CoreGraphics.framework */; };
 		BFD067E818C8680B0093AED8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFD067E718C8680B0093AED8 /* UIKit.framework */; };
@@ -34,6 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7F5465121AE7A71300C3F34B /* CitySelectTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CitySelectTableViewCell.h; sourceTree = "<group>"; };
+		7F5465131AE7A71300C3F34B /* CitySelectTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CitySelectTableViewCell.m; sourceTree = "<group>"; };
+		7F5465141AE7A71300C3F34B /* CitySelectTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CitySelectTableViewCell.xib; sourceTree = "<group>"; };
 		BFD067E018C8680B0093AED8 /* CityList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CityList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFD067E318C8680B0093AED8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BFD067E518C8680B0093AED8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -119,6 +124,9 @@
 				BFD067EA18C8680B0093AED8 /* Supporting Files */,
 				BFD0681218C869250093AED8 /* CityListViewController.h */,
 				BFD0681318C869250093AED8 /* CityListViewController.m */,
+				7F5465121AE7A71300C3F34B /* CitySelectTableViewCell.h */,
+				7F5465131AE7A71300C3F34B /* CitySelectTableViewCell.m */,
+				7F5465141AE7A71300C3F34B /* CitySelectTableViewCell.xib */,
 			);
 			path = CityList;
 			sourceTree = "<group>";
@@ -226,6 +234,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F5465161AE7A71300C3F34B /* CitySelectTableViewCell.xib in Resources */,
 				BFD067EE18C8680B0093AED8 /* InfoPlist.strings in Resources */,
 				BFD0681618C869330093AED8 /* citydict.plist in Resources */,
 				BFD067F618C8680B0093AED8 /* Images.xcassets in Resources */,
@@ -247,6 +256,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F5465151AE7A71300C3F34B /* CitySelectTableViewCell.m in Sources */,
 				BFD067F418C8680B0093AED8 /* AppDelegate.m in Sources */,
 				BFD0681418C869250093AED8 /* CityListViewController.m in Sources */,
 				BFD067F018C8680B0093AED8 /* main.m in Sources */,
@@ -371,6 +381,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CityList/CityList-Prefix.pch";
 				INFOPLIST_FILE = "CityList/CityList-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -384,6 +395,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CityList/CityList-Prefix.pch";
 				INFOPLIST_FILE = "CityList/CityList-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -450,6 +462,7 @@
 				BFD0680E18C8680C0093AED8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BFD0680F18C8680C0093AED8 /* Build configuration list for PBXNativeTarget "CityListTests" */ = {
 			isa = XCConfigurationList;
@@ -458,6 +471,7 @@
 				BFD0681118C8680C0093AED8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
