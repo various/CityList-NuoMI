@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		7F5465151AE7A71300C3F34B /* CitySelectTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F5465131AE7A71300C3F34B /* CitySelectTableViewCell.m */; };
 		7F5465161AE7A71300C3F34B /* CitySelectTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F5465141AE7A71300C3F34B /* CitySelectTableViewCell.xib */; };
+		7FA660F11AE89ECC0001F2D3 /* CitySelectCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FA660EF1AE89ECC0001F2D3 /* CitySelectCollectionViewCell.m */; };
+		7FA660F21AE89ECC0001F2D3 /* CitySelectCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FA660F01AE89ECC0001F2D3 /* CitySelectCollectionViewCell.xib */; };
 		BFD067E418C8680B0093AED8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFD067E318C8680B0093AED8 /* Foundation.framework */; };
 		BFD067E618C8680B0093AED8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFD067E518C8680B0093AED8 /* CoreGraphics.framework */; };
 		BFD067E818C8680B0093AED8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFD067E718C8680B0093AED8 /* UIKit.framework */; };
@@ -36,9 +38,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		7F5465121AE7A71300C3F34B /* CitySelectTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CitySelectTableViewCell.h; sourceTree = "<group>"; };
-		7F5465131AE7A71300C3F34B /* CitySelectTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CitySelectTableViewCell.m; sourceTree = "<group>"; };
-		7F5465141AE7A71300C3F34B /* CitySelectTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CitySelectTableViewCell.xib; sourceTree = "<group>"; };
+		7F5465121AE7A71300C3F34B /* CitySelectTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CitySelectTableViewCell.h; path = ../CitySelectTableViewCell.h; sourceTree = "<group>"; };
+		7F5465131AE7A71300C3F34B /* CitySelectTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CitySelectTableViewCell.m; path = ../CitySelectTableViewCell.m; sourceTree = "<group>"; };
+		7F5465141AE7A71300C3F34B /* CitySelectTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CitySelectTableViewCell.xib; path = ../CitySelectTableViewCell.xib; sourceTree = "<group>"; };
+		7FA660EE1AE89ECC0001F2D3 /* CitySelectCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CitySelectCollectionViewCell.h; path = ../CitySelectCollectionViewCell.h; sourceTree = "<group>"; };
+		7FA660EF1AE89ECC0001F2D3 /* CitySelectCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CitySelectCollectionViewCell.m; path = ../CitySelectCollectionViewCell.m; sourceTree = "<group>"; };
+		7FA660F01AE89ECC0001F2D3 /* CitySelectCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CitySelectCollectionViewCell.xib; path = ../CitySelectCollectionViewCell.xib; sourceTree = "<group>"; };
 		BFD067E018C8680B0093AED8 /* CityList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CityList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFD067E318C8680B0093AED8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BFD067E518C8680B0093AED8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -55,9 +60,9 @@
 		BFD0680418C8680C0093AED8 /* CityListTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CityListTests-Info.plist"; sourceTree = "<group>"; };
 		BFD0680618C8680C0093AED8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BFD0680818C8680C0093AED8 /* CityListTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CityListTests.m; sourceTree = "<group>"; };
-		BFD0681218C869250093AED8 /* CityListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityListViewController.h; sourceTree = "<group>"; };
-		BFD0681318C869250093AED8 /* CityListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityListViewController.m; sourceTree = "<group>"; };
-		BFD0681518C869330093AED8 /* citydict.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = citydict.plist; sourceTree = "<group>"; };
+		BFD0681218C869250093AED8 /* CityListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CityListViewController.h; path = ../CityListViewController.h; sourceTree = "<group>"; };
+		BFD0681318C869250093AED8 /* CityListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CityListViewController.m; path = ../CityListViewController.m; sourceTree = "<group>"; };
+		BFD0681518C869330093AED8 /* citydict.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = citydict.plist; path = ../citydict.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +89,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7FA660F51AE8C7500001F2D3 /* CitySearch */ = {
+			isa = PBXGroup;
+			children = (
+				BFD0681218C869250093AED8 /* CityListViewController.h */,
+				BFD0681518C869330093AED8 /* citydict.plist */,
+				BFD0681318C869250093AED8 /* CityListViewController.m */,
+				7F5465121AE7A71300C3F34B /* CitySelectTableViewCell.h */,
+				7F5465131AE7A71300C3F34B /* CitySelectTableViewCell.m */,
+				7F5465141AE7A71300C3F34B /* CitySelectTableViewCell.xib */,
+				7FA660EE1AE89ECC0001F2D3 /* CitySelectCollectionViewCell.h */,
+				7FA660EF1AE89ECC0001F2D3 /* CitySelectCollectionViewCell.m */,
+				7FA660F01AE89ECC0001F2D3 /* CitySelectCollectionViewCell.xib */,
+			);
+			path = CitySearch;
+			sourceTree = "<group>";
+		};
 		BFD067D718C8680A0093AED8 = {
 			isa = PBXGroup;
 			children = (
@@ -117,16 +138,11 @@
 		BFD067E918C8680B0093AED8 /* CityList */ = {
 			isa = PBXGroup;
 			children = (
-				BFD0681518C869330093AED8 /* citydict.plist */,
+				7FA660F51AE8C7500001F2D3 /* CitySearch */,
 				BFD067F218C8680B0093AED8 /* AppDelegate.h */,
 				BFD067F318C8680B0093AED8 /* AppDelegate.m */,
 				BFD067F518C8680B0093AED8 /* Images.xcassets */,
 				BFD067EA18C8680B0093AED8 /* Supporting Files */,
-				BFD0681218C869250093AED8 /* CityListViewController.h */,
-				BFD0681318C869250093AED8 /* CityListViewController.m */,
-				7F5465121AE7A71300C3F34B /* CitySelectTableViewCell.h */,
-				7F5465131AE7A71300C3F34B /* CitySelectTableViewCell.m */,
-				7F5465141AE7A71300C3F34B /* CitySelectTableViewCell.xib */,
 			);
 			path = CityList;
 			sourceTree = "<group>";
@@ -238,6 +254,7 @@
 				BFD067EE18C8680B0093AED8 /* InfoPlist.strings in Resources */,
 				BFD0681618C869330093AED8 /* citydict.plist in Resources */,
 				BFD067F618C8680B0093AED8 /* Images.xcassets in Resources */,
+				7FA660F21AE89ECC0001F2D3 /* CitySelectCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,6 +273,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FA660F11AE89ECC0001F2D3 /* CitySelectCollectionViewCell.m in Sources */,
 				7F5465151AE7A71300C3F34B /* CitySelectTableViewCell.m in Sources */,
 				BFD067F418C8680B0093AED8 /* AppDelegate.m in Sources */,
 				BFD0681418C869250093AED8 /* CityListViewController.m in Sources */,
